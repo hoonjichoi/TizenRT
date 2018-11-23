@@ -228,7 +228,7 @@ websocket_return_t websocket_tls_init(websocket_t *data,
 	/* 1. Load the certificates and private RSA key */
 	printf("  . Loading the cert. and key...");
 
-	/* S/W Certificiate */
+	/* S/W Certificate */
 	if ((r = mbedtls_x509_crt_parse(cert, (const unsigned char *)crt, crt_len)) != 0) {
 		printf("Error: mbedtls_x509_crt_parse when read crt returned -%4x\n", -r);
 		return WEBSOCKET_INIT_ERROR;
